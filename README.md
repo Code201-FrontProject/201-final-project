@@ -1,4 +1,4 @@
-# Houseplant Finder Website
+# Houseplant Website
 
 ## Summary of the project: 
 
@@ -69,4 +69,11 @@ A website with the following components:
   
 *Acceptance Tests*:
 -	Ensure that the user is able to access a page on the website where all the plants that were recommended are listed.
+
+## Website Wireframes
+
+![wireframe](wireframe1.JPG "wireframe main page")
+
+![wireframe](Wireframe2.JPG "wireframe results page")
+
 
