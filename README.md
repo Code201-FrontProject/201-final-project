@@ -72,7 +72,10 @@ A website with the following components:
 
 ## Website Wireframes
 
+### Main Page
 ![wireframe](wireframe1.JPG "wireframe main page")
+
+### Results Page
 
 ![wireframe](Wireframe2.JPG "wireframe results page")
 
