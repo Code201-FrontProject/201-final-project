@@ -79,4 +79,8 @@ A website with the following components:
 
 ![wireframe](Wireframe2.JPG "wireframe results page")
 
+## Domain Model
+
+![domain-model](domain-modeling.JPG "domain model")
+
 
