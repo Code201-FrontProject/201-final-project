@@ -1,0 +1,48 @@
+body {
+  background-color: pink;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  font-size: 3em;
+  text-align: center;
+  margin: 15px;
+}
+
+nav{
+  margin: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+main {
+  margin: 15px;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+main section img {
+  width: 40%;
+  height: 40%;
+  margin: 15px;
+}
+
+main article{
+  margin: 15px;
+}
+
+main article h2{
+  margin-bottom: 15px;
+}

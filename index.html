@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant App</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+  
+  <header>
+    <h1>Homeplant App</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="results.html">Results Page</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="main-container">
+      <img src="img/Zamioculcas.jpg" alt="">
+      <article>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem obcaecati, voluptatibus saepe quidem, ea possimus voluptate quaerat modi unde dignissimos hic qui commodi odit aspernatur aliquid suscipit distinctio est!
+        Molestias sed vel sapiente, odio, quo ea quibusdam culpa ut dolores commodi nesciunt cum modi neque sit at doloribus. Esse omnis quam, totam sed nam distinctio magnam voluptatem! Hic, laudantium!</p>
+      </article>
+    </section>
+    <div id="form-container">
+      <form id = "plant-form">
+        <fieldset>
+          <legend>Tell us about your plans for your plant!</legend>
+          <label for="water">How often do you want to water your plant?</label><br />
+          <input name="water" type="radio" value="weekly" required />Weekly<br />
+          <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
+          <input name="water" type="radio" value="monthly" required />Monthly<br />
+          <label for="light">How much light will your plant receive?</label><br />
+          <input name="light" type="radio" value="low" required />Low (indirect light)<br />
+          <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
+          <input name="light" type="radio" value="high" required />High (direct light)<br/>
+          <label for="humidity">What is the humidity level in your home?</label><br />
+          <input name="humidity" type="radio" value="low" required />Low<br />
+          <input name="humidity" type="radio" value="medium" required />Medium<br />
+          <input name="humidity" type="radio" value="high" required />High<br />
+          <label for="pets">Some plants are toxic to animals. Do you have pets?</label><br />
+          <input name="pets" type="radio" value="yes" required />Yes<br />    
+          <input name="pets" type="radio" value="no" required />No<br />
+          <br/><br/>
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
