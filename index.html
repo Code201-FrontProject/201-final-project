@@ -41,10 +41,12 @@
           <input name="light" type="radio" value="low" required />Low (indirect light)<br />
           <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
           <input name="light" type="radio" value="high" required />High (direct light)<br/>
+          <!--
           <label for="humidity">What is the humidity level in your home?</label><br />
           <input name="humidity" type="radio" value="low" required />Low<br />
           <input name="humidity" type="radio" value="medium" required />Medium<br />
-          <input name="humidity" type="radio" value="high" required />High<br />
+          <input name="humidity" type="radio" value="high" required />High<br /> 
+          --> 
           <label for="pets">Some plants are toxic to animals. Do you have pets?</label><br />
           <input name="pets" type="radio" value="yes" required />Yes<br />    
           <input name="pets" type="radio" value="no" required />No<br />
@@ -53,6 +55,23 @@
         </fieldset>
       </form>
     </div>
+
+    <!---This is the container for the plant recommendation-->
+    <section id="container">
+      <div id="title">
+        <h1 id="name"></h1>
+      </div>
+      <div id="content">
+        <div id="plant-summary"></div>
+        <div id="traits-container">
+          <ul id="plant-traits"></ul>
+        </div>
+        <div id="img">
+          <img id="image" src="" alt="">
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer></footer>
 <script src="js/app.js"></script>
