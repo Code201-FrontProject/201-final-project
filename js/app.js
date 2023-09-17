@@ -5,15 +5,15 @@ let plantsArray = [];
 
 let chosenWater;
 let chosenLight;
-/*let chosenHumidity;*/
+let chosenHumidity;
 let ownsPet;
 
 // ***** DOM WINDOWS *****
 
-let panelTitle = document.getElementById('title');
+/*let panelTitle = document.getElementById('title');*/
 let panelName = document.getElementById('name');
 let panelSummary = document.getElementById('plant-summary');
-let panelTraitsContainer = document.getElementById('traits-container');
+/*let panelTraitsContainer = document.getElementById('traits-container');*/
 let panelImage = document.getElementById('image');
 let panelTraits = document.getElementById('plant-traits');
 
@@ -74,33 +74,780 @@ function renderPlantRecommendation(){
   case 'weekly':
     switch (chosenLight){
     case 'low':
-      switch (ownsPet){
-      case 'yes':
-        panelName.textContent = plantsArray[0].name;
-        panelSummary.textContent = plantsArray[0].summary;
-        for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
-          let liElem = document.createElement('li');
-          panelTraits.appendChild(liElem);
-          liElem.textContent = plantsArray[0].traitsDescription[i];
-        }
-        panelImage = document.getElementById('image');
-        panelImage.src = plantsArray[0].image;
-        plantsArray[0].clicks++;
-        break;
-      case 'no':
-        panelName.textContent = plantsArray[1].name;
-        panelSummary.textContent = plantsArray[1].summary;
-        for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
-          let liElem = document.createElement('li');
-          panelTraits.appendChild(liElem);
-          liElem.textContent = plantsArray[1].traitsDescription[i];
-        }
-        panelImage = document.getElementById('image');
-        panelImage.src = plantsArray[1].image;
-        plantsArray[1].clicks++;
-        break;
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
       } break;
+    case 'medium':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    case 'high':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    } break;
+  case 'bi-weekly':
+    switch (chosenLight){
+    case 'low':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    case 'medium':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    case 'high':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    } break;
+  case 'monthly':
+    switch (chosenLight){
+    case 'low':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    case 'medium':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    case 'high':
+      switch (chosenHumidity){
+      case 'low':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'medium':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      case 'high':
+        switch (ownsPet){
+        case 'yes':
+          panelName.textContent = plantsArray[0].name;
+          panelSummary.textContent = plantsArray[0].summary;
+          for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[0].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[0].image;
+          plantsArray[0].clicks++;
+          break;
+        case 'no':
+          panelName.textContent = plantsArray[1].name;
+          panelSummary.textContent = plantsArray[1].summary;
+          for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+            let liElem = document.createElement('li');
+            panelTraits.appendChild(liElem);
+            liElem.textContent = plantsArray[1].traitsDescription[i];
+          }
+          panelImage = document.getElementById('image');
+          panelImage.src = plantsArray[1].image;
+          plantsArray[1].clicks++;
+          break;
+        } break;
+      } break;
+    } break;
+  }
+  inputForm.reset();
+}
 
+
+
+
+
+
+
+
+/*
     case 'medium':
       switch(ownsPet){
       case 'yes':
@@ -335,11 +1082,10 @@ function renderPlantRecommendation(){
 
 
     } break;
-  }
-  // resets the form:
-  inputForm.reset();
+  }*/
+// resets the form:
+/*inputForm.reset();*/
 
-}
 
 // ***** EVENT HANDLERS *****
 
@@ -349,7 +1095,7 @@ function handleSubmit(event){
   event.preventDefault();
   chosenWater = event.target.water.value;
   chosenLight = event.target.light.value;
-  /*chosenHumidity = event.target.humidity.value;*/
+  chosenHumidity = event.target.humidity.value;
   ownsPet = event.target.pets.value;
 
   panelTraits.innerHTML = '';
