@@ -48,6 +48,7 @@ console.log('parsed plants >>>', parsedPlants);
 if(retrievedPlants) {
   plantsArray = parsedPlants;
 } else {
+
   let zamioculcas = new Plant('Zamioculcas', 'bla bla bla', ['description for a zamioculcas', 'second description for a zamioculcas'] /*'Monthly', 'Low', 'Low', 'Pet safe'*/);
   let snakePlant = new Plant('Snake Plant', 'bla bla bla', ['description for a snake plant', 'second description for a snake plant']/*'Monthly', 'Medium', 'Medium', 'Pet safe'*/);
   let peruPlant = new Plant('Peru Plant', 'bla bla bla', ['description for a peru Plant', 'second description for a peru plant']/*'Bi-Weekly', 'High', 'High', 'Not pet safe'*/);
@@ -66,6 +67,7 @@ if(retrievedPlants) {
 
 // Render plant recommendation
 function renderPlantRecommendation(){
+
   document.getElementById('container').style.visibility = 'visible';
 
   switch (chosenWater){
@@ -245,9 +247,99 @@ function renderPlantRecommendation(){
 
     } break;
 
-  }
-}
+  case 'monthly':
+    switch (chosenLight){
+    case 'low':
+      switch (ownsPet){
+      case 'yes':
+        panelName.textContent = plantsArray[0].name;
+        panelSummary.textContent = plantsArray[0].summary;
+        for (let i = 0; i < plantsArray[0].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[0].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[0].image;
+        plantsArray[0].clicks++;
+        break;
+      case 'no':
+        panelName.textContent = plantsArray[1].name;
+        panelSummary.textContent = plantsArray[1].summary;
+        for (let i = 0; i < plantsArray[1].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[1].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[1].image;
+        plantsArray[1].clicks++;
+        break;
+      } break;
 
+    case 'medium':
+      switch(ownsPet){
+      case 'yes':
+        panelName.textContent = plantsArray[2].name;
+        panelSummary.textContent = plantsArray[2].summary;
+        for (let i = 0; i < plantsArray[2].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[2].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[2].image;
+        plantsArray[2].clicks++;
+        break;
+      case 'no':
+        panelName.textContent = plantsArray[3].name;
+        panelSummary.textContent = plantsArray[3].summary;
+        for (let i = 0; i < plantsArray[3].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[3].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[3].image;
+        plantsArray[3].clicks++;
+        break;
+      } break;
+
+    case 'high':
+      switch(ownsPet){
+      case 'yes':
+        panelName.textContent = plantsArray[4].name;
+        panelSummary.textContent = plantsArray[4].summary;
+        for (let i = 0; i < plantsArray[2].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[4].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[4].image;
+        plantsArray[4].clicks++;
+        break;
+      case 'no':
+        panelName.textContent = plantsArray[5].name;
+        panelSummary.textContent = plantsArray[5].summary;
+        for (let i = 0; i < plantsArray[5].traitsDescription.length; i++) {
+          let liElem = document.createElement('li');
+          panelTraits.appendChild(liElem);
+          liElem.textContent = plantsArray[3].traitsDescription[i];
+        }
+        panelImage = document.getElementById('image');
+        panelImage.src = plantsArray[5].image;
+        plantsArray[5].clicks++;
+        break;
+      } break;
+
+
+    } break;
+  }
+  // resets the form:
+  inputForm.reset();
+
+}
 
 // ***** EVENT HANDLERS *****
 
