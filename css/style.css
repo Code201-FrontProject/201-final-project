@@ -1,14 +1,28 @@
 body {
-  background-color: pink;
+  background-color: #FFFEFD;
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 header {
   font-size: 3em;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   text-align: center;
-  margin: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  /*position: sticky;*/
 }
+
+/*
+header img {
+  position: absolute;
+  height: 100%;
+  left: 0%;
+} */
+
 
 nav{
   margin: 30px;
@@ -17,11 +31,15 @@ nav{
 nav ul {
   display: flex;
   gap: 50px;
+  direction: rtl;
 }
+
 
 nav ul li a{
   text-decoration: none;
+  font-size: medium;
 }
+
 
 main {
   margin: 15px;
@@ -41,8 +59,13 @@ main section img {
 
 main article{
   margin: 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 main article h2{
   margin-bottom: 15px;
+  font-weight: 500;
+  color: green;
 }
