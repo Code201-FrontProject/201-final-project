@@ -41,24 +41,34 @@
     <div id="form-container">
       <form id = "plant-form">
         <fieldset>
-          <legend>Tell us about your plans for your plant!</legend>
-          <label for="water">How often do you want to water your plant?</label><br />
-          <input name="water" type="radio" value="weekly" required />Weekly<br />
-          <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
-          <input name="water" type="radio" value="monthly" required />Monthly<br />
-          <label for="light">How much light will your plant receive?</label><br />
-          <input name="light" type="radio" value="low" required />Low (indirect light)<br />
-          <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
-          <input name="light" type="radio" value="high" required />High (direct light)<br/>
-          <label for="humidity">What is the humidity level in your home?</label><br />
-          <input name="humidity" type="radio" value="low" required />Low<br />
-          <input name="humidity" type="radio" value="medium" required />Medium<br />
-          <input name="humidity" type="radio" value="high" required />High<br /> 
+          <legend>We believe that anyone can get a plant for their house and succeed in caring for it. Tell us about your plans for your plant!</legend>
+          <div>
+            <label for="water" class="large-label">How often do you want to water your plant?</label><br />
+            <input name="water" type="radio" value="weekly" required />Weekly<br />
+            <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
+            <input name="water" type="radio" value="monthly" required />Monthly<br />
+          </div>
+
+          <div>
+            <label for="light" class="large-label">How much light will your plant receive?</label><br />
+            <input name="light" type="radio" value="low" required />Low (indirect light)<br />
+            <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
+            <input name="light" type="radio" value="high" required />High (direct light)<br/>
+          </div>
+
+          <div>
+            <label for="humidity" class="large-label">What is the humidity level in your home?</label><br />
+            <input name="humidity" type="radio" value="low" required />Low<br />
+            <input name="humidity" type="radio" value="medium" required />Medium<br />
+            <input name="humidity" type="radio" value="high" required />High<br /> 
+          </div>
           
-          <label for="pets">Some plants are toxic to animals. Do you have pets?</label><br />
-          <input name="pets" type="radio" value="yes" required />Yes<br />    
-          <input name="pets" type="radio" value="no" required />No<br />
-          <br/><br/>
+          <div>
+            <label for="pets" class="large-label">Some plants are toxic to animals. Do you have pets?</label><br />
+            <input name="pets" type="radio" value="yes" required />Yes<br />    
+            <input name="pets" type="radio" value="no" required />No<br />
+            <br/>
+          </div>
           <button>Submit</button>
         </fieldset>
       </form>

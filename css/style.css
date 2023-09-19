@@ -9,40 +9,37 @@ header {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  /*position: sticky;*/
+  margin: 0;
 }
 
-/*
-header img {
-  position: absolute;
-  height: 100%;
-  left: 0%;
-} */
-
+header h1{
+  margin: 15px;
+  font-size: 1em;
+}
 
 nav{
-  margin: 30px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
 }
 
 nav ul {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   direction: rtl;
+  margin-right: 20px;
 }
+
 
 
 nav ul li a{
   text-decoration: none;
-  font-size: medium;
+  font-size: 0.5em;
 }
 
 
 main {
   margin: 15px;
+  margin-top: 15px;
 }
 
 #main-container {
@@ -69,3 +66,58 @@ main article h2{
   font-weight: 500;
   color: green;
 }
+
+form{
+  border: 1px solid green;
+  padding: 25px;
+  width: 50%;
+  margin: auto;
+  background-color: #85DBA2;
+}
+
+form div{
+  margin: 15px;
+}
+
+form legend{
+  color: green;
+  font-weight: 500;
+  font-size: large;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+
+}
+
+input[type="radio"] {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
+
+button {
+  padding: 5px;
+  font: bold 1em;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: palevioletred;
+  /*cursor: pointer;*/
+}
+
+button:hover {
+  outline: none;
+  background: green;
+  color: #fff;
+}
+
+.large-label {
+  display: inline-block;
+  font: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+fieldset input{
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+
+}
+
