@@ -29,11 +29,10 @@ nav ul {
   margin-right: 20px;
 }
 
-
-
 nav ul li a{
   text-decoration: none;
   font-size: 0.5em;
+  vertical-align:middle;
 }
 
 
@@ -69,6 +68,7 @@ main article h2{
 
 form{
   border: 1px solid green;
+  border-radius: 20px;
   padding: 25px;
   width: 45%;
   margin: auto;
@@ -123,4 +123,51 @@ fieldset input{
   margin-left: 1rem;
 
 }
+
+
+#container{
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 25px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #93D4CE;
+  visibility: hidden;
+}
+
+#content{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#image{
+  width: 100%;
+  height: auto;
+}
+
+#plant-traits{
+  display: list-item;
+}
+
+#plant-traits li{
+  list-style-type: square;
+  margin: 15px;
+  font-size: 1em;
+}
+
+#plant-traits li::marker {
+  color: green;
+  font-size: 1em;
+}
+
+#name{
+  color: green;
+  font-size: 2em;
+  margin-bottom: 15px;
+
+}
+
+
+
 
