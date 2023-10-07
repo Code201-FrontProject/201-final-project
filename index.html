@@ -6,50 +6,76 @@
   <title>Plant App</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+
+  
 </head>
 <body>
   
   <header>
     <h1>Homeplant App</h1>
+
+    <nav>
+      <ul>
+        <li><a href="results.html">Results Page</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="results.html">Results Page</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
+
 
   <main>
     <section id="main-container">
-      <img src="img/Zamioculcas.jpg" alt="">
+      <img src="img/plant-drawing.png" alt="">
       <article>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem obcaecati, voluptatibus saepe quidem, ea possimus voluptate quaerat modi unde dignissimos hic qui commodi odit aspernatur aliquid suscipit distinctio est!
-        Molestias sed vel sapiente, odio, quo ea quibusdam culpa ut dolores commodi nesciunt cum modi neque sit at doloribus. Esse omnis quam, totam sed nam distinctio magnam voluptatem! Hic, laudantium!</p>
+        <h2>Welcome!</h2>
+        <p>Here at Homeplant we are all about helping you get the right plant for you and your home. We want to help you decorate your home and bring more joy to your life with a houseplant that works with your schedule for watering, and that can thrive with the amount of light and humidity in your home.<br>  
+        <p>
+          If you have a pet, you need to know that some houseplants are toxic when consumed by cats and dogs. That's why we also have recommendations for plants that are considered to be dog and cat safe!
+        </p>
+
+        </p>          
+          This website is dedicated to making the process of looking for the right plant simple and less confusing. All you have to do is fill out the form below to get a plant recommendation that fits your needs!</p>
       </article>
     </section>
     <div id="form-container">
       <form id = "plant-form">
         <fieldset>
-          <legend>Tell us about your plans for your plant!</legend>
-          <label for="water">How often do you want to water your plant?</label><br />
-          <input name="water" type="radio" value="weekly" required />Weekly<br />
-          <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
-          <input name="water" type="radio" value="monthly" required />Monthly<br />
-          <label for="light">How much light will your plant receive?</label><br />
-          <input name="light" type="radio" value="low" required />Low (indirect light)<br />
-          <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
-          <input name="light" type="radio" value="high" required />High (direct light)<br/>
-          <label for="humidity">What is the humidity level in your home?</label><br />
-          <input name="humidity" type="radio" value="low" required />Low<br />
-          <input name="humidity" type="radio" value="medium" required />Medium<br />
-          <input name="humidity" type="radio" value="high" required />High<br /> 
+          <legend>We believe that anyone can get a plant for their house and succeed in caring for it. Tell us about your plans for your plant!</legend>
+          <div>
+            <label for="water" class="large-label">How often do you want to water your plant?</label><br />
+            <input name="water" type="radio" value="weekly" required />Weekly<br />
+            <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
+            <input name="water" type="radio" value="monthly" required />Monthly<br />
+          </div>
+
+          <div>
+            <label for="light" class="large-label">How much light will your plant receive?</label><br />
+            <input name="light" type="radio" value="low" required />Low (indirect light)<br />
+            <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
+            <input name="light" type="radio" value="high" required />High (direct light)<br/>
+          </div>
+
+    <!---This is the container for the plant humidity
+          <div>
+            <label for="humidity" class="large-label">What is the humidity level in your home?</label><br />
+            <input name="humidity" type="radio" value="low" required />Low<br />
+            <input name="humidity" type="radio" value="medium" required />Medium<br />
+            <input name="humidity" type="radio" value="high" required />High<br /> 
+          </div>  -->
           
-          <label for="pets">Some plants are toxic to animals. Do you have pets?</label><br />
-          <input name="pets" type="radio" value="yes" required />Yes<br />    
-          <input name="pets" type="radio" value="no" required />No<br />
-          <br/><br/>
+          <div>
+            <label for="pets" class="large-label">Some plants are toxic to animals. Do you have pets?</label><br />
+            <input name="pets" type="radio" value="yes" required />Yes<br />    
+            <input name="pets" type="radio" value="no" required />No<br />
+            <br/>
+          </div>
           <button>Submit</button>
         </fieldset>
       </form>
@@ -61,10 +87,13 @@
         <h1 id="name"></h1>
       </div>
       <div id="content">
-        <div id="plant-summary"></div>
+        <!--<div id="plant-summary"></div>-->
         <div id="traits-container">
-          <ul id="plant-traits"></ul>
+          <ul id="plant-traits">
+            <li id="list-plant-traits"></li> 
+          </ul>
         </div>
+
         <div id="img">
           <img id="image" src="" alt="">
         </div>
