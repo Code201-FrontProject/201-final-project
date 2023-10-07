@@ -29,9 +29,9 @@ for (let i = 0; i < parsedPlants.length; i++) {
     let panelContent = document.createElement('div');
     containerElem.appendChild(panelContent);
 
-    let panelSummary = document.createElement('p');
-    panelContent.appendChild(panelSummary);
-    panelSummary.textContent = parsedPlants[i].summary;
+    // let panelSummary = document.createElement('p');
+    // panelContent.appendChild(panelSummary);
+    // panelSummary.textContent = parsedPlants[i].summary;
 
     let traitsList = document.createElement('ul');
     panelContent.appendChild(traitsList);
@@ -48,6 +48,11 @@ for (let i = 0; i < parsedPlants.length; i++) {
     let contentImage = document.createElement('img');
     imageContainer.appendChild(contentImage);
     contentImage.src = parsedPlants[i].image;
+
+    let line = document.createElement('hr');
+    panelContent.appendChild(line);
+
+
 
 
   }
