@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeplant - Home</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  
+  <header>
+    <h1>Homeplant</h1>
+
+    <nav>
+      <ul>
+        <li><a href="results.html">Your Results</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>Home</li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section id="main-container">
+      <img src="img/plant-drawing.png" alt="" id="article-img">
+      <article>
+        <h2>Welcome!</h2>
+        <p>Here at Homeplant we are all about helping you get the right plant for you and your home. We want to help you decorate your home and bring more joy to your life with a houseplant that works with your schedule for watering, and that can thrive with the amount of light in your home.
+        </p> 
+        <p>
+          If you have a pet, you need to know that some houseplants are toxic when consumed by cats and dogs. That's why we also have recommendations for plants that are considered to be dog and cat safe!
+        </p>
+        <p>          
+          This website is dedicated to making the process of looking for the right plant simple and less confusing. All you have to do is fill out the form below to get a plant recommendation that fits your needs!
+        </p>
+          <h3>Fill out the form below to get started!</h3>
+      </article>
+    </section>
+    <div id="form-container">
+      <form id = "plant-form">
+        <fieldset>
+          <legend>We believe that anyone can get a plant for their house and succeed in caring for it. Tell us about your plans for your plant!</legend>
+          <div>
+            <label for="water" class="large-label">How often do you want to water your plant?</label><br />
+            <input name="water" type="radio" value="weekly" required />Weekly<br />
+            <input name="water" type="radio" value="bi-weekly" required />Bi-weekly<br />
+            <input name="water" type="radio" value="monthly" required />Monthly<br />
+          </div>
+
+          <div>
+            <label for="light" class="large-label">How much light will your plant receive?</label><br />
+            <input name="light" type="radio" value="low" required />Low (indirect light)<br />
+            <input name="light" type="radio" value="medium" required />Medium (some direct light)<br />
+            <input name="light" type="radio" value="high" required />High (direct light)<br/>
+          </div>
+
+        
+          <div>
+            <label for="pets" class="large-label">Some plants are toxic to animals. Do you have pets?</label><br />
+            <input name="pets" type="radio" value="yes" required />Yes<br />    
+            <input name="pets" type="radio" value="no" required />No<br />
+            <br/>
+          </div>
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!---This is the container for the plant recommendation-->
+    <section id="container">
+      <div id="title">
+        <h1 id="name"></h1>
+      </div>
+      <div id="content">
+        <div id="traits-container">
+          <ul id="plant-traits">
+            <li id="list-plant-traits"></li> 
+          </ul>
+        </div>
+
+        <div id="img">
+          <img id="image" src="" alt="">
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <p> &#169; 2023 Mayra C.</p>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
