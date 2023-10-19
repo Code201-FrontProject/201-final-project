@@ -1,4 +1,4 @@
-# Houseplant Website
+# Homeplant Website
 
 ## Summary of the project
 
