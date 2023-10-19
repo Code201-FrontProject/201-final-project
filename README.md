@@ -6,13 +6,14 @@ This is a website that helps people to find the right houseplant that fits their
 
 ## What problem or pain point does it solve?
 
-- When it comes to buying houseplants, there are many options in the market and it can feel overwhelming to choose the right plant. Whether the user of this website is already a plant parent or somebody who is just getting started, the site will provide recommendations taking into account their experience taking care of plants, their home environment and their level of interest.
+- When it comes to buying houseplants, there are many options in the market and it can feel overwhelming to choose the right plant. Whether the user of this website is already a plant parent or somebody who is just getting started, the site will provide recommendations taking into account plant watering requirements, light level, and pet safety.
 
 ## Minimum Viable Product (MVP) definition
 
 A website with the following components:
 
-- A main page that describes the purpose of the website, with a form where users can fill in required information so that we can know their experience with plants, their home environment and their level of interest.
+- A main page that describes the purpose of the website, with a form where users can fill in required information so that we can know their plant watering requirements, light level, and pet safety.
+
 - The main page will have a link to a second page that will show the houseplant recommendations.
 
 ## User Stories
@@ -37,18 +38,19 @@ A website with the following components:
 *Acceptance Tests*:
 
 - Ensure that the user selects a plant light level from the form.
-- Ensure the user is provided with a recommendation of a plant according to their needs
+- Ensure the user is provided with a recommendation of a plant according to their needs.
 
-3. As a user, I want to find a plant that is cold-resistant so that it will survive in the temperatures of my home.
+3. As a user, I want to find a plant that needs minimal maintenance so that it will survive even though I sometimes forget to water it.
 
 *Feature Tasks*:
 
-- User can complete a form and select the average temperature of their home.
+- User can complete a form and select the plant watering requirements.
+
   
 *Acceptance Tests*:
 
-- Ensure that the user selects a temperature from the form
-- Ensure the user is provided with a recommendation of a plant according to their needs
+- Ensure that the user selects a watering requirement from the form.
+- Ensure the user is provided with a recommendation of a plant according to their needs.
 
 4. As a user, I want to find the right plant for me and my pet so if my pet eats it, it doesn’t die.
 
